@@ -1,6 +1,6 @@
 function Explanation(props) {
     return (
-        <p>{props.explanation}</p>
+        <p className="App-explanation">{props.explanation}</p>
     )
 }
 

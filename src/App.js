@@ -8,7 +8,6 @@ import Explanation from './components/Explanation'
 function App() {
 
   const [nasaData, setNasaData] = useState("");
-  console.log(nasaData)
   
   useEffect(() => {
   axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
@@ -22,12 +21,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
+      <h1 className = "App-header">
         NASA Photo of the Day <span role="img" aria-label='go!'>🚀</span>!
       </h1>
       <Title photoTitle={nasaData.title}/>
       <Photo photoURL={nasaData.url}/>
-      <Explanation explanation={nasaData.explanation}/>
+      <Explanation className="App-explanation" explanation={nasaData.explanation}/>
     </div>
   );
 }

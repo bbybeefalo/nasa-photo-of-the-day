@@ -1,7 +1,7 @@
 function Title(props) {
 
     return (
-        <h2>{props.photoTitle}</h2>
+        <h1>{props.photoTitle}</h1>
     )
 }
 

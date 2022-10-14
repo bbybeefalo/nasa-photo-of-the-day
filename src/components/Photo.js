@@ -1,6 +1,6 @@
 function Photo(props) {
 return (
-    <div>
+    <div className="App-img">
         <img src= {props.photoURL} />
     </div>
  )
