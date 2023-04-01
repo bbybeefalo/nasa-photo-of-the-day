@@ -1,20 +1,10 @@
 .App {
+  background-color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #22262F;
   min-height: 10vh;
   display: flex;
   align-items: center;
@@ -23,28 +13,62 @@
   color: white;
 }
 
+.Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .App-explanation {
-  background-color: #282c34;
+  background-color:#22262F;
   min-height: 10vh;
   width: 95vh;
-  margin: auto;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(4px + 2vmin);
+  font-size: calc(2px + 2vmin);
   color: white;
   border-radius: 10px;
   padding: 20px;
-}
-
-.App-link {
-  color: #61dafb;
+  margin-right: 5em;
 }
 
 img {
   border-radius: 10px;
+  width: 70%;
+  height: auto;
+  margin-top: 1em;
 }
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*phone*/
+@media only screen and (max-width: 600px) {
+.Content{
+  display: flex;
+  flex-direction: column;
+}
+
+.App-explanation {
+  background-color: #282c34;
+  min-height: 10vh;
+  font-size: calc(2px + 2vmin);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 5em;
+}
+}
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
