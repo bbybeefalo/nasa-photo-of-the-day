@@ -6,6 +6,7 @@
 .App-header {
   background-color: #22262F;
   min-height: 10vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +53,7 @@ img {
 .Content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .App-explanation {
@@ -61,13 +63,10 @@ img {
   color: white;
   border-radius: 10px;
   padding: 20px;
-  margin-right: 5em;
+  margin: auto;
+  width: 80%
 }
 }
-
-
-
-
 
 
 @keyframes App-logo-spin {
@@ -78,3 +77,4 @@ img {
     transform: rotate(360deg);
   }
 }
+

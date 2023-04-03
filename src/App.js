@@ -37,9 +37,7 @@ function App() {
       <div className="Content">
         <Photo photoURL={nasaData.url} explanation={nasaData.explanation} />
         <Explanation explanation={nasaData.explanation} />
-
       </div>
-
     </div>
   );
 }
